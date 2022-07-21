@@ -48,6 +48,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # gem 'rails_db', '2.0.4'
+  gem 'mysql2' # , '~> 0.3.18'
 end
 
 group :development do
@@ -58,6 +59,10 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'awesome_print'
+  gem 'capistrano', '~> 3.11', require: false
+  gem 'capistrano-rvm'
+  gem 'capistrano-bundler', '~> 1.5'
+  gem 'capistrano-rails', '~> 1.4', require: false
 end
 
 group :test do

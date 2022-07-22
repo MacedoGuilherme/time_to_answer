@@ -18,7 +18,7 @@ namespace :dev do
     show_spinner("Cadastrando perguntas e respostas...") { %x(rails dev:add_answers_and_questions) }
     # else
     #   puts "Você não está em ambiente de desenvolvimento!"
-    end
+    #end
   end
 
   desc "Adiciona o administrador padrão"

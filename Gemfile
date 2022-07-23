@@ -44,6 +44,7 @@ gem 'kaminari'
 gem 'kaminari-i18n'
 gem "cocoon"
 gem 'mysql2' # , '~> 0.3.18'
+gem "unicorn"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -63,6 +64,7 @@ group :development do
   gem 'capistrano-rvm'
   gem 'capistrano-bundler', '~> 1.5'
   gem 'capistrano-rails', '~> 1.4', require: false
+  gem "capistrano3-unicorn"
 end
 
 group :test do
